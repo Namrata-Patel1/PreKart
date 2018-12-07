@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay1"
+    tools:context="com.example.androidl.prekart.debit">
+
+<Spinner
+    android:id="@+id/spinner3"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:textStyle="bold"
+    android:layout_marginRight="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_alignTop="@+id/spinner1"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:id="@+id/editText100"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="ENTER NAME"
+    tools:layout_editor_absoluteX="84dp"
+    tools:layout_editor_absoluteY="31dp"
+    android:layout_below="@+id/spinner5"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="26dp" />
+
+<EditText
+    android:id="@+id/editText101"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="ENTER CARD NO."
+    android:layout_below="@+id/editText100"
+    android:layout_alignLeft="@+id/editText100"
+    android:layout_alignStart="@+id/editText100"
+    android:layout_marginTop="44dp" />
+
+<Spinner
+    android:id="@+id/spinner5"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="21dp"
+    android:layout_marginStart="21dp"
+    android:layout_alignLeft="@+id/editText100"
+    android:layout_alignStart="@+id/editText100" />
+
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="33dp"
+    android:text="SUBMIT"
+    android:onClick="onSubmit"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true" />
+
+<Spinner
+    android:id="@+id/spinner1"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp" />
+
+<EditText
+    android:id="@+id/editText3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/editText101"
+    android:layout_alignRight="@+id/editText101"
+    android:layout_below="@+id/spinner3"
+    android:layout_marginTop="46dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:hint="ENTER CVV" />
+
+</RelativeLayout>

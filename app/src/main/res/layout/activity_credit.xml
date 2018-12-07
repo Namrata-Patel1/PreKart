@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay1"
+    tools:context="com.example.androidl.prekart.credit">
+
+    <EditText
+        android:id="@+id/editText100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ENTER NAME"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:id="@+id/editText101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText100"
+        android:layout_alignRight="@+id/editText100"
+        android:layout_below="@+id/editText100"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="ENTER CARD NO." />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/editText101"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_toRightOf="@+id/spinner1"
+        android:layout_toEndOf="@+id/spinner1" />
+
+
+    <Button
+        android:id="@+id/creditbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:onClick="onSubmit"
+        android:text="SUBMIT"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+</RelativeLayout>
